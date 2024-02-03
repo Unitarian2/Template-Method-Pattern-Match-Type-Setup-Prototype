@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,8 @@ public class DamageCircleDB : MonoBehaviour, IDistanceBasedCircle
     public StatType Type { get; set; }
     public float Amount { get; set; }
     public Collider Collider { get; set; }
+
+    public float LifeSpan { get; set; }
 
     public void Despawn()
     {
@@ -39,6 +42,7 @@ public class DamageCircleDB : MonoBehaviour, IDistanceBasedCircle
     {
         Amount = 20;
         Type = StatType.Health;
+        LifeSpan = 1000;
         Collider = GetComponent<Collider>();
     }
 

@@ -10,9 +10,14 @@ public class CircleSpawnManager : MonoBehaviour
     
     void Start()
     {
+        
+        
+    }
+
+    public void CircleSpawnManagerSetup()
+    {
         magicCircleFactory = GetComponent<MagicCircleFactory>();
         StartCoroutine(StartCircleSpawnProcess());
-        
     }
 
     private IEnumerator StartCircleSpawnProcess()

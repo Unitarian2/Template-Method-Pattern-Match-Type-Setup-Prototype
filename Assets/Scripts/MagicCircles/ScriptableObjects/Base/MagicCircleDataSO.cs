@@ -7,5 +7,6 @@ public class MagicCircleDataSO : ScriptableObject
 {
     public float amount;
     public StatType type;
+    public float lifeSpan;
     public GameObject prefab;
 }

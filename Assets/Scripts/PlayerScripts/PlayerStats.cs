@@ -17,10 +17,10 @@ public class PlayerStats : Subject, IObserver
     public float CurrentHealth { get => health; set => health = value; }
     public float CurrentMana { get => mana; set => mana = value; }
 
-    public const float maxHealth = 100;
+    public float maxHealth = 100;
     public const float minHealth = 0;
 
-    public const float maxMana = 150;
+    public float maxMana = 150;
     public const float minMana = 0;
 
     private void Start()

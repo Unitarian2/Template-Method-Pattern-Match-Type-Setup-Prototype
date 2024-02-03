@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(AdProcess());
+        
     }
 
     IEnumerator AdProcess()
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        FacadeAdsManager.Instance.HideAds();
+        
         StopCoroutine(AdProcess());
     }
 }

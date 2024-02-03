@@ -20,6 +20,17 @@ public class PlayerBasicDataUI : MonoBehaviour
         PlayerStats.OnManaChanged -= PlayerStats_OnManaChanged;
     }
 
+    public void Setup()
+    {
+        healthSlider.value = 1; manaSlider.value = 1;
+        SliderAnim();
+    }
+
+    private void SliderAnim()
+    {
+        Debug.Log("Slider Anim");
+    }
+
     private void PlayerStats_OnHealthChanged(float currentHealthAmount, float maxHealth)
     {
         healthSlider.value = currentHealthAmount / maxHealth;

@@ -7,8 +7,9 @@ public class ManaCircle : BaseCircle, ICircle
     
     public float Amount { get; set; }
     public StatType Type { get; set; }
+    public float LifeSpan { get; set; }
 
-    
+
 
     public float GetCalculatedAmount()
     {
@@ -28,7 +29,6 @@ public class ManaCircle : BaseCircle, ICircle
     {
         Amount = m_MagicCircleDataSO.amount;
         Type = m_MagicCircleDataSO.type;
-        Amount = 5;
-        Type = StatType.Mana;
+        LifeSpan = m_MagicCircleDataSO.lifeSpan;
     }
 }

@@ -9,7 +9,7 @@ public class HealCircleLifeCycle : CircleLifeCycle
     {
         this.CircleRef = circleRef;
         SpawnUp();
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(CircleRef.LifeSpan);
         Shrink();
     }
 }

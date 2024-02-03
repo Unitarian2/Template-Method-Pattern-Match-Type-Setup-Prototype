@@ -30,7 +30,7 @@ public class ReceiveInteraction : Subject
                 if (other.gameObject.TryGetComponent(out IDistanceBasedCircle getSpecialCircle))
                 {
                     //Debug.Log("Contacted with IDistanceBasedCircle");
-                    ICircle adapter = new SpecialToRegularCircleAdapter(this.gameObject.transform.position, getSpecialCircle.Type, getSpecialCircle.Amount, getSpecialCircle);
+                    ICircle adapter = new SpecialToRegularCircleAdapter(this.gameObject.transform.position, getSpecialCircle.Type, getSpecialCircle.Amount, getSpecialCircle, getSpecialCircle.LifeSpan);
                     circle = adapter;             
                 }
 

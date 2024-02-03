@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   type: 0
+  lifeSpan: 15
   prefab: {fileID: 8674122902396696180, guid: 87658edf64f86454e80120d59b627ad5, type: 3}

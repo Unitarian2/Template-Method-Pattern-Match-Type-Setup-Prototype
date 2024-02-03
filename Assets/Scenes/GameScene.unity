@@ -1657,6 +1657,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerInteractionSubject: {fileID: 321996750}
   _playerMovementSubject: {fileID: 321996747}
+  maxHealth: 100
+  maxMana: 150
 --- !u!1001 &328150457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2002,6 +2004,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331019272}
   m_CullTransparentMesh: 1
+--- !u!1 &343978826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343978828}
+  - component: {fileID: 343978827}
+  m_Layer: 0
+  m_Name: GameSetupManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &343978827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343978826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f69a1eab27d696547a57424d632f9c59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBasicDataUI: {fileID: 1822697192}
+  playerStats: {fileID: 321996751}
+  magicCircleDataSOs:
+  - {fileID: 11400000, guid: a695b812dbf2ff04aaba150f3d13bd69, type: 2}
+  - {fileID: 11400000, guid: a68c2f1a0db5e0b49b6844e729b2e06b, type: 2}
+  - {fileID: 11400000, guid: 13c49744534843c4b96116d6b69860d5, type: 2}
+  circleSpawnManager: {fileID: 1289977041}
+  pickupableSpawner: {fileID: 1889566447}
+  matchType: 0
+--- !u!4 &343978828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343978826}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351395863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,7 +2099,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &361662980
 PrefabInstance:
@@ -8938,7 +8993,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1889566446
 GameObject:

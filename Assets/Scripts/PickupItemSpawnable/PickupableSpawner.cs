@@ -13,10 +13,10 @@ public class PickupableSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartSpawning();
+        
     }
 
-    private void StartSpawning()
+    public void StartSpawning()
     {
         isSpawnActive = true;
         SpawnSinglePickupable();
