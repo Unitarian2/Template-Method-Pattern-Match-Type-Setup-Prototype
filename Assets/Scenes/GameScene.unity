@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 351395865}
   - component: {fileID: 351395864}
   m_Layer: 0
-  m_Name: AdsManager
+  m_Name: FacadeAdsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
